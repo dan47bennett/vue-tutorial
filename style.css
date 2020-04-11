@@ -33,7 +33,7 @@ body {
     width: 50%;
   }
   
-  .color-box {
+  .colour-box {
     width: 40px;
     height: 40px;
     margin-top: 5px;
@@ -86,4 +86,8 @@ body {
   .activeTab {
     color: #16C0B0;
     text-decoration: underline;
+  }
+
+  .crossout {
+    text-decoration: line-through;
   }
