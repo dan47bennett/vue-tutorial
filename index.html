@@ -42,10 +42,6 @@
                     <p>Sizes:</p>
                 </div>
 
-                <div>
-                    <p v-if="onSale">{{onSaleString}}</p>
-                </div>
-
                 <ul>
                     <li v-for="size in sizes">{{ size }}</li>
                 </ul>
@@ -55,9 +51,7 @@
                 :class="{ disabledButton: !inStock }"
                 >Add to cart</button>
 
-                <button @click="removeFromCart"
-                :class="{ disabledButton: !inStock }"
-                >Remove</button>
+                <button @click="removeFromCart">Remove</button>
 
                 <div class="cart">
                     <p>Cart({{ cart }})</p>
